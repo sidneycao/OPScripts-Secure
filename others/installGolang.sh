@@ -12,3 +12,5 @@ tar -zxvf /root/${filename} -C  /usr/local/
 echo "PATH=$PATH:$HOME/bin:/usr/local/go/bin" >> /etc/profile
 
 echo "export PATH" >> /etc/profile
+
+source /etc/profile
