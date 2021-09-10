@@ -3,11 +3,9 @@
 # 一键安装最新版的Golang
 # 
 
-version=$1
+url=`curl -s https://golang.org/dl/ | grep downloadBox | grep linux | awk -F'=\"' '{print $3}' | awk -F'\">' '{print $1}'`
 
-#read -p 'version: ' version
-
-wget -P /root/ https://golang.org/dl/go${version}.linux-amd64.tar.gz 
+wget -P /root/ https://golang.org${url}
 
 tar -zxvf /root/linux-amd64.tar.gz -C  /usr/local/
 
