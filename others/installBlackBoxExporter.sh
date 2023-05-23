@@ -2,7 +2,7 @@
 
 wget https://github.com/prometheus/blackbox_exporter/releases/download/v0.24.0/blackbox_exporter-0.24.0.linux-amd64.tar.gz
 
-tar blackbox_exporter-0.24.0.linux-amd64.tar.gz -C /etc/
+tar -zxvf blackbox_exporter-0.24.0.linux-amd64.tar.gz -C /etc/
 
 cd /etc/
 
