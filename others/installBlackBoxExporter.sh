@@ -15,7 +15,7 @@ Wants=network-online.target
 After=network-online.target
 
 [Service]
-ExecStart=/etc/blackbox_exporter/blackbox_exporter
+ExecStart=/etc/blackbox_exporter/blackbox_exporter --config.file=/etc/blackbox_exporter/blackbox.yml
 
 [Install]
 WantedBy=default.target" > /usr/lib/systemd/system/blackbox_exporter.service
