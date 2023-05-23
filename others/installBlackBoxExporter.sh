@@ -6,7 +6,7 @@ tar blackbox_exporter-0.24.0.linux-amd64.tar.gz -C /etc/
 
 cd /etc/
 
-mv blackbox_exporter-0.24.0.linux-amd64.tar.gz blackbox_exporter
+mv blackbox_exporter-0.24.0.linux-amd64 blackbox_exporter
 
 echo -e "#Prometheus Blackbox Exporter Upstart script
 [Unit]
