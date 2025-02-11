@@ -1,0 +1,13 @@
+
+alias ll='ls -al -G'
+alias vi='vim'
+alias rm='rm -i'
+alias rmm='move(){ [ -d ~/.Trash ] || mkdir -p ~/.Trash; mv -iv $@ ~/.Trash/; };move $@'
+alias mv='mv -i'
+alias tf='terraform'
+
+export PS1='\[$(tput bold)\]\u\[$(tput sgr0)\]@\[$(tput bold)\]\[\e[38;5;2m\h\[$(tput sgr0)\]\e[m-\[\e[38;5;160m\A\e[m:[\e[38;5;14m\w\e[m]\$\n'
+
+export HISTIGNORE='pwd:exit:fg:bg:top:clear:history:ls:uptime:df'
+export HISTTIMEFORMAT='%F %T  '
+shopt -s histverify
